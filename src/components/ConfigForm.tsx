@@ -33,7 +33,7 @@ export default function ConfigForm() {
             className="p-4 text-gray-700"
             onSubmit={handleSubmit}
         >
-            <div className="grid grid-cols-3 gap-4 md:gap-x-16 items-start">
+            <div className="sm:grid grid-cols-3 gap-4 md:gap-x-4 lg:gap-x-16 items-start">
                 <label>CPU</label>
                 <div className="row-start-2 col-start-1 border border-gray-300 rounded-md shadow-sm">
                     <select
@@ -54,7 +54,7 @@ export default function ConfigForm() {
                     </select>
                 </div>
 
-                <label className="block">Memory size</label>
+                <label className="block max-sm:pt-4">Memory size</label>
                 <div className="row-span-2 row-start-2 col-start-2">
                     <MemoryInput
                         updateMemorySize={updateMemorySize}
@@ -63,7 +63,7 @@ export default function ConfigForm() {
                     />
                 </div>
 
-                <div className="row-start-2 col-start-3 self-center flex items-center gap-2 min-w-48">
+                <div className="row-start-2 col-start-3 self-center flex items-center gap-2 min-w-52  max-sm:pt-4">
                     <input
                         type="checkbox"
                         className="h-5 w-5 border-gray-300"
